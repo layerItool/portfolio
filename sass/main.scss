@@ -1,0 +1,24 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/mixins";
+
+// Blocks
+
+@import "./blocks/logo";
+@import "./blocks/button";
+@import "./blocks/social";
+@import "./blocks/nav";
+@import "./blocks/nav-icon";
+@import "./blocks/form";
+
+//Section
+@import "./section/header";
+@import "./section/section-card";
+@import "./section/section-timeline";
+@import "./section/section-contacts";
+@import "./section/footer";
+
+//Media
+@import "./media/media";

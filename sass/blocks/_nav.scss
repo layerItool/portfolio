@@ -1,0 +1,165 @@
+.nav-mobile__desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+
+    a {
+        
+        color: #000;
+        text-decoration: none;
+        max-width: 138px;
+
+        &:last-child {
+            max-width: inherit;
+            
+            color: inherit;
+            font-weight: normal;
+        }
+    }
+}
+
+.nav-mobile__desc .social-contacts__mobile a{
+    margin-top: 0;
+}
+
+.nav-mobile__desc-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    :last-child{
+        color: #000 !important;
+        font-weight: 600 !important;
+        //margin-top: 28px !important;
+    }
+}
+
+@media (max-width: 899px) {
+    .nav-mobile__desc-list{
+        align-items: baseline;
+    /* Mobile */
+        @media (max-width: 767px) {
+            align-items: center;
+    
+    
+    
+        }
+    }
+
+
+}
+
+.nav-mobile__desc-list-items{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+@media (max-width: 899px){
+    .nav-mobile__desc{
+    //display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #fff;
+
+   transform: translateX(100%);
+    opacity: 0;
+    
+
+  
+
+          /* Mobile */
+@media (max-width: 767px) {
+    position: fixed;
+    top: -100%;
+    height: auto;
+    
+    transform: none;
+    opacity: 0;
+    color: #fff;
+
+    
+ }
+   
+}
+}
+
+.nav-mobile__desc-list-items a{
+    margin-right: 0;
+    margin-bottom: 28px;
+    
+    color: #000000;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+
+    &:first-child{
+       margin-top: 28px; 
+    }
+
+   
+
+}
+
+
+
+.nav-mobile__desc.nav--active{
+    
+    opacity: 1;
+    transform: translateX(0);
+    padding-left: 15px;
+    transition: all 0.2s ease-in;
+    height: 100%;
+
+        /* Mobile */
+@media (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    transform: none;
+    width: 100%;
+ }
+
+
+}
+
+.mobile-bg--active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(37, 73, 116, 0.8);
+    z-index: 998;
+
+    /* Mobile */
+@media (max-width: 767px) {
+    background: #FFFFFF;
+}
+}
+
+
+
+
+.social-contacts__mobile .social-contacts__icon{
+    display: inline-block;
+
+}
+
+.nav-mobile__desc .page-link{
+    padding-bottom: 40px;
+    margin-top: 0;
+}
