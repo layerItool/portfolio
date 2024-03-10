@@ -114,3 +114,32 @@
     }
 
 }
+
+
+.backtop-btn {
+    position: fixed;
+    width: 60px;
+    bottom: 20px;
+    right: 50px;
+    z-index: 100;
+    transition: 0.3s;
+    opacity: 0;
+
+    display: inline-block;
+    border-radius: 50px;
+
+
+
+    &:hover {
+        background-color: #FBDC4D;
+
+
+    }
+
+    @media (max-width: 899px) {
+        display: none;
+    }
+
+    @media (max-width: 767px) {}
+
+}
