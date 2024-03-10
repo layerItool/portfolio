@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 const navIcon = document.querySelector('.nav-mobile__icon');
 const nav = document.querySelector('.nav-mobile__desc');
@@ -72,7 +74,7 @@ const backTopBtn = document.querySelector('#backtop');
 backTopBtn.style.opacity = 0;
 
 document.addEventListener('scroll', function(){
-    if(window.pageYOffset > 700){
+    if(window.scrollY > 700){
         backTopBtn.style.opacity = 1
         backTopBtn.classList.remove('hidden')
         
@@ -84,6 +86,10 @@ document.addEventListener('scroll', function(){
 
     }
 })
+
+
+
+AOS.init();
 
 
 
