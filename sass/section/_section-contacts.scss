@@ -48,6 +48,11 @@ overflow: hidden;
     @media (max-width: 899px) {
         margin-left: 20px;
     }
+
+           /* Mobile */
+           @media (max-width: 767px) {
+               margin-left: 15px;   
+           }
 }
 
 
@@ -234,12 +239,12 @@ overflow: hidden;
     top: -19%;
     z-index: -1;
 
-            /* Tablet Big */
-                @media (max-width: 1139px) {
-                    display: none;
-            
-            
-                }
+    /* Tablet Big */
+        @media (max-width: 1139px) {
+            display: none;
+    
+    
+        }
             
             
 }
