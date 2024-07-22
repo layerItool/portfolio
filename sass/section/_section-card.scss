@@ -65,13 +65,22 @@
 
 }
 
+.scale:hover a  img{
+    transform: scale(1.2);
+}
+
+.scale a img{
+    transition: .5s;
+    width: 100%;
+}
+
 .card-top__link {
     
     //flex-shrink: 0;
-       /* Mobile */
-            @media (max-width: 767px) {
-                margin-bottom: 30px;
-            }
+    //    /* Mobile */
+    //         @media (max-width: 767px) {
+    //             margin-bottom: 30px;
+    //         }
     
     &:not(:last-child){
 
@@ -99,7 +108,13 @@
     z-index: 2;
     background: linear-gradient(0deg, rgba(255, 221, 85, 0.75), rgba(255, 221, 85, 0.75));
     transform: translateY(100%);
+    //backdrop-filter: blur(1px);
     transition: 0.3s;
+}
+
+.card__img picture{
+    width: 100%;
+    max-width: 100%;
 }
 
 .card__img span{
@@ -109,7 +124,7 @@
     transform: translate(-50%, -50%); //разместить по середине
 
     display: inline-block;
-    padding: 10px 20px;
+    padding: 14px 20px;
     color: #fff;
     font-size: 18px;
     background-color: $hover-button;
@@ -127,9 +142,17 @@
 
                 /* Mobile */
                 @media (max-width: 767px) {
-                    padding: 10px 0px;
+                    padding: 10px 10px;
+                    
+                    white-space: nowrap;
                     border-radius: 20px;
                 }
+}
+
+ .button-3:active{
+    color: #aaa669;
+    top: 52%;
+    transition: .3s;
 }
 
 .card-top__link:hover .card__img span,
@@ -159,7 +182,7 @@
 
 /* Mobile */
 @media (max-width: 767px) {
-    
+    margin-bottom: 30px;
 }
 }
 
@@ -191,7 +214,7 @@
 }
 }
 .card-bottom__link{
-    //flex-shrink: 0;
+    flex-shrink: 0;
 
     
     &:not(:last-child){
@@ -201,7 +224,7 @@
           /* Mobile */
             @media (max-width: 767px) {
                 margin-right: 0;
-                margin-bottom: 30px;
+                //margin-bottom: 30px;
             }
         }
 
@@ -211,6 +234,7 @@
 
 .card-bottom__desc {
     margin-top: 16px;
+    
 
          /* Tablet Big */
 @media (max-width: 1139px) {
@@ -227,6 +251,7 @@
 /* Mobile */
 @media (max-width: 767px) {
     max-width: 245px;
+    margin-bottom: 30px;
 }
     
 }

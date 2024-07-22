@@ -211,11 +211,13 @@ overflow: hidden;
     min-height: 243px;
     z-index: -1;
     
+    
 
             /* Tablet Big */
     @media (max-width: 1139px) {
-    left: 39%;
+        left: 39%;
         top: -59%;
+
 
     }
 
@@ -224,6 +226,22 @@ overflow: hidden;
         display: none;
     }
 
+}
+
+.contact-img.contact-img--two {
+    position: absolute;
+    left: 10%;
+    top: -19%;
+    z-index: -1;
+
+            /* Tablet Big */
+                @media (max-width: 1139px) {
+                    display: none;
+            
+            
+                }
+            
+            
 }
 
 
