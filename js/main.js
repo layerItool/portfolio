@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
 const navIcon = document.querySelector('.nav-mobile__icon');
 const nav = document.querySelector('.nav-mobile__desc');
@@ -20,8 +19,6 @@ const navLinks = document.querySelectorAll('.nav-mobile__desc a');
 navLinks.forEach(function (item){
     
     item.addEventListener('click', function(){
-
-
         navIcon.classList.remove('nav-mobile__icon--active');
         nav.classList.remove('nav--active')
         mob.classList.remove('mobile-bg--active')
@@ -30,6 +27,7 @@ navLinks.forEach(function (item){
     })
 })
 
+//Закрытие при нажатии на bg
 const navMobs = document.querySelectorAll('.mobile-bg');
 
 navMobs.forEach(function (item) {
@@ -87,9 +85,22 @@ document.addEventListener('scroll', function(){
     }
 })
 
-
-
 AOS.init();
+
+//ПАРАЛАКС
+let prxScene = document.querySelector('.contacts');
+let prxItem = document.querySelectorAll('.contact-img');
+
+prxScene.addEventListener('mousemove', function(e){
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+    for(let item of prxItem){
+        item.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+    }
+})
+
+
+
 
 
 

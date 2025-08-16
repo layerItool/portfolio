@@ -2,7 +2,7 @@
 
     display: flex;
     justify-content: space-between;
-    margin-top: -100px;
+    //margin-top: -100px;
     padding-top: 70px;
 
     /* Tablet Big */
@@ -13,7 +13,8 @@
 
     /* Mobile */
     @media (max-width: 767px) {
-        margin-top: -80px;
+        //margin-top: 20px;
+        padding-top: 50px;
     }
 
 

@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title and SEO -->
-		<title>Стартовый шаблон</title>
+		<title>Portfolio</title>
 		<meta name="description" content="Описание страницы" />
 		<meta name="keywords" content="ключевые слова, фразы" />
         <!-- Fonts -->
@@ -25,6 +25,8 @@
 		<meta property="og:title" content="Туристическое агентство Форест Тревел" />
 		<meta property="og:description" content="Турпоходы по дикой природе" />
 		<meta property="og:image" content="./img/opengraph.jpg"/>
+
+        <meta name='freelancehunt' content='bf53544938753dc'>
 
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
@@ -117,10 +119,10 @@
             <!-- header__social -->
                 <div class="header__social">
                     <!-- LINKEDIN -->
-                    <a class="header__social-item header__social-item--linked" href="#">
+                    <a class="header__social-item header__social-item--linked" href="https://www.linkedin.com/feed/?nis=true">
                     </a>
                     <!-- GITHUB -->
-                    <a class="header__social-item header__social-item--git" href="#">
+                    <a class="header__social-item header__social-item--git" href="https://github.com/layerItool">
                     </a> 
                 </div>
             <!--\\ header__social -->
@@ -154,8 +156,8 @@
                             
                         <!-- BUTTON -->
                         <div class="buttons">
-                            <a class="button-1" href="#skills">Познакомиться</a>
-                            <a class="button-2" href="#skills">Контакты</a>
+                            <a class="button-1 button-1--header" href="#skills"><span>Познакомиться</span></a>
+                            <a class="button-2 button-2--header" href="#contact"> <span>Контакты</span></a>
                         
                         </div>
                             
@@ -173,14 +175,14 @@
             </div>
 
     <!-- BACGROUND -->
-            <div class="img-bg"  data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
-
-                <picture>
+            <div class="img-bg bgp">
+                <!-- data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0" -->
+                <!-- <picture>
                     <source srcset="img/adaptiv/header/Header-m.png" media="(max-width: 767px)">
                     <source srcset="img/adaptiv/header/Header-ts.png" media="(max-width: 899px)">
                     <source srcset="img/adaptiv/header/Header-t.png" media="(max-width: 1139px)">
                     <img src="./img/header/header-bg.jpg" alt="BG">
-                </picture>
+                </picture> -->
             </div>
 
 <!-- ---header-skills--- -->
@@ -241,7 +243,7 @@
                     <!-- social-contacts__icon -->
                             <div class="social-contacts__icon ">
                                 <!-- telegram -->
-                                <a href="#" class="social-contact__icon--telegram">
+                                <a href="https://t.me/LayerTool" class="social-contact__icon--telegram">
                                 </a>
                                 <!-- --vk -->
                                 <a href="#" class="social-contact__icon--vk">
@@ -350,9 +352,10 @@
                                 </ul>
                             </nav>
                         <!-- MAIL -->
-                            <div class="page-link ">
+                            <div class="page-link">
                                 <a href="mailto:mexiko944@gmail.com">
-                                    mexiko944@gmail.com</a>
+                                    mexiko944@gmail.com
+                                </a>
                             </div>
                         </div>
                 <!--\\ SOCIAL -->
@@ -713,7 +716,7 @@
                         </div>
                     <!--\\ social-contacts__icon -->
                     </div>
-                    <form action="#" class="contact-form" data-aos="fade-up" data-aos-duration="1000">
+                    <form action="#" class="contact-form" data-aos="fade-up" data-aos-duration="900">
                         <div class="form-line">
                             <span class="form-line__text ">Ваш Email</span>
                             <input  placeholder="" class="form-line__field" name="email" type="email">
@@ -727,7 +730,7 @@
                         </div>
 
                         <div class="form-line form-line--btn"> 
-                            <input class="button-1" type="submit" value="Отправить">
+                            <input class="button-1 button-1--form" type="submit" tabindex="0" value="Отправить">
                         </div>
                     </form>
                     <div id="answer"></div>
@@ -750,10 +753,7 @@
                         Веб-разработчик из Казахстана, занимаюсь версткой и созданием сайтов.
                     </p>
                     
-                    <p>
-                        Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a class="footer-copyright__description-a" href="#">WebCademy.ru</a>
-                    </p>
-                    
+                   
                 </div>
                 </div>
             </div>

@@ -1,21 +1,18 @@
 .button-1 {
-    position: relative;
-    overflow: hidden;
+   
 
     background: $button-color !important;
     margin-right: 20px;
 
-    transition: border 0.2s linear, background-color 0.2s linear ;
-
-    &:hover{
-        background: $button-focus !important;
-    }
+    // &:hover{
+    //     background: $button-focus !important;
+    // }
     &:active{
         background: $button-active !important;
     }
 }
 
-.button-1::before {
+.button-1.button-1--header::before {
     position: absolute;
     content: '';
     top: 0;
@@ -40,20 +37,89 @@
     }
 }
 
+.button-1.button-1--header::after{
+ 
+    content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 200px;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.9) );
+        transition: transform 0.5s ease-in-out;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        /* Делаем круглый эффект */
+        z-index: 4;
+        
+}
+
+.button-1.button-1--header:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+   
+}
+
+.button-1.button-1--header:hover {
+    span{
+        color: $button-color ;
+    }
+    
+    
+}
+
+.button-1.button-1--header span {
+    position: relative;
+    z-index: 5;
+}
+
+
 .button-2 {
         background: $button2-color;
-        transition: border 0.2s linear, background-color 0.2s linear ;
+       
         
-        &:hover{
-        background: $button2-focus;
-    }
+    //     &:hover{
+    //     background: $button2-focus;
+    // }
 
     &:active{
         background: $button2-active;
     }
 }
 
+.button-2::before{
+    content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        background: $button2-focus;
+        transition: transform 0.5s ease-in-out;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        /* Делаем круглый эффект */
+        z-index: 4;
+}
+
+.button-2:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    
+    background: $button2-focus;
+}
+
+
+
+.button-2 span {
+    position: relative;
+    z-index: 5;
+}
+
 .button-1,.button-2{
+    position: relative;
+        
+        transition: border 0.2s linear, background-color 0.2s linear;
+        transition: color 0.4s ease-in-out;
+        overflow: hidden;
     padding-right: 40px;
     padding-left: 40px;
     height: 64px;
@@ -62,6 +128,10 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 64px;
+
+    span{
+        transition: color 0.3s ease-in-out;
+    }
 
     /*---TABLET-b---*/
     @media (max-width: 1139px) {
@@ -82,6 +152,14 @@
     
 
 }
+}
+
+.button-1.button-1--form{
+    transition: .3s ease-in;
+}
+
+.button-1.button-1--form:hover{
+    background: $button-focus !important;
 }
 
 .mix-button__block{

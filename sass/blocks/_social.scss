@@ -96,6 +96,35 @@
     }
 }
 
+.page-link a{
+    text-decoration: none ;
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.page-link a:hover {
+    text-decoration: none !important;
+
+    
+}
+
+.page-link a::before {
+    content: '';
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #1A71D2;
+    transition: 0.2s ease-in-out;
+}
+
+.page-link a:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+
 
 
 

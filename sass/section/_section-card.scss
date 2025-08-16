@@ -106,11 +106,13 @@
     right: 0;
     bottom: 0;
     z-index: 2;
-    background: linear-gradient(0deg, rgba(255, 221, 85, 0.75), rgba(255, 221, 85, 0.75));
+    background: linear-gradient(0deg, rgba(74, 74, 74, 0.70), rgba(214, 200, 145, 0.70));
     transform: translateY(100%);
     //backdrop-filter: blur(1px);
     transition: 0.3s;
 }
+
+
 
 .card__img picture{
     width: 100%;
@@ -125,9 +127,9 @@
 
     display: inline-block;
     padding: 14px 20px;
-    color: #fff;
+    color: $button-color;
     font-size: 18px;
-    background-color: $hover-button;
+    background-color: #000;
     opacity: 0;
     transition: 0.5s;
     z-index: 3;
@@ -148,6 +150,7 @@
                     border-radius: 20px;
                 }
 }
+
 
  .button-3:active{
     color: #aaa669;

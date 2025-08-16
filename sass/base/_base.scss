@@ -57,6 +57,17 @@ section {
 
 }
 
+a:focus {
+    background-color: lightblue;
+}
+
+a:focus-visible,input:focus-visible {
+    outline: 2px solid $black-color;
+    /* Синяя рамка */
+    outline-offset: 3px;
+    /* Отступ рамки */
+}
+
 /* Utility */
 
 .none {
@@ -231,4 +242,6 @@ section {
 .overlay{
     overflow:hidden;
 }
+
+
 
